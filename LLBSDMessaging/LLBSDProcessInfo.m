@@ -36,7 +36,7 @@ static NSString * const kLLBSDInfoProcessIdentifierKey = @"processIdentifier";
     if (![self.processName isEqualToString:object.processName]) {
         return NO;
     }
-    if (!self.processIdentifier != object.processIdentifier) {
+    if (self.processIdentifier != object.processIdentifier) {
         return NO;
     }
     return YES;
